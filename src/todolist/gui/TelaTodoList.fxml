@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00a9d4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.gui.TelaTodoListController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="157.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="447.0" minWidth="10.0" prefWidth="443.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="402.0" prefWidth="203.0" style="-fx-background-color: white;">
+            <children>
+                <Label fx:id="nomeUsuario" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="214.0" style="-fx-text-alignment: center;" text="Amigo!" textAlignment="CENTER" textFill="#00a9d4">
+                    <font>
+                        <Font name="Arial Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="37.0" layoutY="171.0" text="OLÁ" textFill="#00a9d4">
+                    <font>
+                        <Font name="Arial Black" size="34.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00a9d4;" GridPane.columnIndex="1">
+            <children>
+                <Label layoutX="154.0" layoutY="14.0" text="TODO LIST" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="23.0" />
+                    </font>
+                </Label>
+                <Button layoutX="19.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnAdicionarTarefa" style="-fx-background-radius: 8px; -fx-padding: 8px 10px; -fx-background-color: #2efb72; -fx-cursor: hand;" text="Adicionar Tarefa" textFill="#272930">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="novaTarefa" layoutX="19.0" layoutY="100.0" prefHeight="25.0" prefWidth="407.0" promptText="Digite uma nova tarefa" style="-fx-background-radius: 6px; -fx-padding: 4px 6px; -fx-background-color: white;" />
+                <ListView fx:id="listaDeTarefas" layoutX="14.0" layoutY="131.0" prefHeight="255.0" prefWidth="415.0" style="-fx-background-color: #0096bb; -fx-background-radius: 15px;" />
+                <Button layoutX="326.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnExcluirTarefa" style="-fx-background-radius: 8px; -fx-padding: 8px 10px; -fx-background-color: #c50b0b; -fx-cursor: hand;" text="Excluir Tarefa" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
